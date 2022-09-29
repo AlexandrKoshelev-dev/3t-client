@@ -20,18 +20,10 @@ main = () => {
   again = win_block.getElementsByClassName("again")[0];
   winning = game.getElementsByClassName("winning")[0];
 
-  // again.onclick = function () {
-  //   winning.style.display = "none"
-  //   win_block.style.display = "none"
-  //   clearTable()
-  // }
-
   for (var i = 0; i < arr.length; i++) {
     arr[i].onclick = function () {
       sendDrawSym(this);
     };
-
-    /* тут хотел использовать addEven.. и потом убрать его, когда определился победитель */
   }
 };
 
